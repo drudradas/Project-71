@@ -15,7 +15,7 @@ export default class WriteComplaint extends React.Component {
         }
     }
 
-    submitStory = ()=>{
+    submitQuery = ()=>{
         db.collection("complaints").add({
             title : this.state.title,
             student: this.state.student,
@@ -73,7 +73,7 @@ export default class WriteComplaint extends React.Component {
                 
                 <TouchableOpacity
                     style={styles.submitButton}
-                   onPress = {this.submitStory}
+                   onPress = {this.submitQuery}
                    >
                     <Text style={styles.buttonText}>Submit</Text>
                 </TouchableOpacity>
